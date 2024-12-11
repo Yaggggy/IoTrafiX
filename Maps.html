@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IoTraffic</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Style for the image to be added in the body */
+      .image-container {
+        position: relative;
+        width: 80%; /* Adjust width to 80% of the screen */
+        height: auto;
+        max-width: 1356px; /* Maximum width limit */
+        max-height: 80vh; /* Limit the height to 80% of the viewport height */
+        padding: 20px; /* Add padding all around the image */
+        top: 10vh; /* Position it a little below the top to fit well on the screen */
+        left: 50%;
+        transform: translateX(-50%); /* Center the image horizontally */
+        border-radius: 26px 26px 26px 26px;
+        opacity: 1; /* Ensure the image is visible */
+        background-color: #fff; /* Optional background color */
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensures the image fits without distortion */
+        border-radius: inherit; /* Apply the same border-radius to the image */
+      }
+
+      /* Optional, if you want to adjust the background color or spacing */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4; /* Optional background color */
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div>
+          <a href="index.html">
+            <img src="assets/IoTrafix logo 4.png" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <ul class="nav-icons">
+          <li>
+            <a href="camera.html"
+              ><img src="assets/Camera.png" alt="cam" class="nav-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="alerts.html"
+              ><img src="assets/Bell.png" alt="Alert" class="nav-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="Maps.html"
+              ><img src="assets/Map 02.png" alt="maps" class="nav-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="Profile.html"
+              ><img src="assets/User 2.png" alt="User" class="nav-icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Image in the body -->
+    <div class="image-container">
+      <img src="assets\Rectangle 22.png" alt="Main Image" />
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>
