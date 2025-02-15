@@ -1,0 +1,208 @@
+/* Ensure the body and html take up the full height of the viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Added default font for better readability */
+}
+
+/* Body layout with flexbox to push footer to the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+.header {
+  background-color: black;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  margin-left: 20px; /* Adds gap to the left of the logo */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Increased the gap for spacing between items */
+  margin: 0;
+  padding: 0;
+  margin-right: 20px; /* Adds gap to the right of the navbar items */
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.nav-icon {
+  width: 45px;
+  height: 44px;
+  cursor: pointer;
+}
+/* Weather & Images Container */
+.weather-images-container {
+  display: flex; /* Arrange items in a row */
+  justify-content: center; /* Center content */
+  align-items: center; /* Align vertically */
+  gap: 15px; /* Space between iframe and images */
+  padding: 40px 20px; /* Padding around */
+  margin: auto; /* Centering horizontally */
+  width: fit-content; /* Fit only content width */
+}
+
+/* Weather Iframe Styling */
+.weather-iframe {
+  width: 366px;
+  height: 313px;
+  border: none;
+  overflow: hidden;
+  display: block;
+}
+
+/* Images Container */
+.images-container {
+  display: flex; /* Arrange images in a row */
+  gap: 15px; /* Space between images */
+}
+
+/* Common image styling */
+.image {
+  width: 366px;
+  height: 313px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.image:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for the images below the first image */
+.other-images {
+  display: flex; /* Align images horizontally */
+  justify-content: space-between; /* Space between images */
+  gap: 20px; /* Space between the images */
+  width: 100%; /* Ensure images take up the full width */
+  justify-content: center; /* Center the images horizontally */
+}
+
+/* Wrapper for each individual image and fullscreen icon */
+.image-container {
+  position: relative;
+}
+
+/* Common image styling */
+.image {
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.camimg {
+  display: flex;
+  flex-direction: column; /* Stack the first image on top */
+  align-items: center; /* Center all images horizontally */
+  padding: 40px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* Styling for the first image */
+.first-image {
+  width: 1200px; /* Set the specific width */
+  height: 477px; /* Set the specific height */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px; /* Space below the first image */
+  opacity: 1;
+}
+
+/* Container for the other images */
+.other-images {
+  display: flex; /* Align images horizontally */
+  justify-content: center;
+  gap: 30px; /* Space between images */
+  width: 100%;
+}
+
+/* Styling for the individual images (other three images) */
+.second-image,
+.third-image,
+.fourth-image {
+  width: 375px; /* Set the width of the other three images */
+  height: 237px; /* Set the height of the other three images */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+/* Fullscreen icon styling */
+.fullscreen-icon {
+  width: 28px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px; /* Position the icon at the bottom */
+  right: 10px; /* Position the icon to the right */
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Wrapper for each individual image and fullscreen icon */
+.image-container {
+  position: relative; /* Needed for positioning the fullscreen icon */
+}
+
+/* Hover effect on images */
+.image:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+/* Fullscreen active state (full-screen image) */
+.fullscreen {
+  width: 1200px !important; /* Set to the size of the first image */
+  height: 477px !important; /* Set to the size of the first image */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  max-height: 100vh;
+  object-fit: contain; /* Ensure the image fits within the viewport */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition when entering/exiting fullscreen */
+}
+.footer {
+  background-color: grey;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 0; /* Ensuring no extra margin below the footer */
+  flex-shrink: 0; /* Prevents the footer from shrinking */
+}
+
+/* Footer text styling */
+.footer p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+/* Optional: Add some spacing to the body content */
+body > div {
+  margin-bottom: 50px; /* Ensures there's some space between content and footer */
+}

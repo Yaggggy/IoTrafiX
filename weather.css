@@ -1,0 +1,43 @@
+/* Weather Widget Styling */
+.weather-widget {
+  width: 366px;
+  height: 313px;
+  background-color: #2a2d43; /* Set background color */
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Weather Icon */
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+/* Temperature */
+.temp {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* City Name */
+.city {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Weather Description */
+.description {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
